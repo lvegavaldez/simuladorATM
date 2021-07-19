@@ -1,7 +1,4 @@
-package com.lds.main;
-
-import com.lds.main.java.Cuenta;
-import com.lds.main.java.Saldo;
+package com.lds.main.java;
 
 public class CajaDeAhorroPesos implements Saldo {
     private Alias alias;

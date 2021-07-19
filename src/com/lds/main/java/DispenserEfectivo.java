@@ -1,7 +1,5 @@
 package com.lds.main.java;
 
-import com.lds.test.Sobre;
-
 import java.util.List;
 
 public class DispenserEfectivo {

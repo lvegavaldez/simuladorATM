@@ -1,10 +1,5 @@
 package com.lds.main.java;
 
-import com.lds.main.Alias;
-import com.lds.main.CajaDeAhorroDolares;
-import com.lds.main.CajaDeAhorroPesos;
-import com.lds.main.CuentaCorriente;
-
 import java.util.Arrays;
 
 public class Cuenta {

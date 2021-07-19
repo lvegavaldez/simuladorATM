@@ -1,6 +1,5 @@
 package com.lds.test;
 
-import com.lds.main.*;
 import com.lds.main.java.*;
 import org.junit.Assert;
 import org.junit.Test;

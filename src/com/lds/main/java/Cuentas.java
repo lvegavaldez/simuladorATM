@@ -1,6 +1,4 @@
-package com.lds.main;
-
-import com.lds.main.java.Cuenta;
+package com.lds.main.java;
 
 import java.util.List;
 

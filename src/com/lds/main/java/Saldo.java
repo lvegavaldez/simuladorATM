@@ -1,7 +1,5 @@
 package com.lds.main.java;
 
-import com.lds.main.Alias;
-
 public interface Saldo {
     void completar(Cuenta cuenta);
 

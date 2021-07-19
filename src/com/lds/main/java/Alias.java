@@ -1,4 +1,4 @@
-package com.lds.main;
+package com.lds.main.java;
 
 public class Alias {
     String alias;

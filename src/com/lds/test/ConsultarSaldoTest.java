@@ -1,9 +1,9 @@
 package com.lds.test;
 
-import com.lds.main.CajaDeAhorroDolares;
-import com.lds.main.CajaDeAhorroPesos;
-import com.lds.main.CuentaCorriente;
-import com.lds.main.Cuentas;
+import com.lds.main.java.CajaDeAhorroDolares;
+import com.lds.main.java.CajaDeAhorroPesos;
+import com.lds.main.java.CuentaCorriente;
+import com.lds.main.java.Cuentas;
 import com.lds.main.java.*;
 import org.junit.Assert;
 import org.junit.Test;

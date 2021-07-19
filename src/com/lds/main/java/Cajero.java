@@ -1,9 +1,5 @@
 package com.lds.main.java;
 
-import com.lds.main.Alias;
-import com.lds.main.Cuentas;
-import com.lds.test.Sobre;
-
 import java.util.List;
 
 public class Cajero {
