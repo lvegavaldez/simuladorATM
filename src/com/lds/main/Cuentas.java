@@ -12,6 +12,17 @@ public class Cuentas {
     }
 
     public Cuenta buscar(String cuit) {
+        //TODO falta proceso de busqueda de una cuenta completa
         return cuentas.get(0);
+    }
+
+    public boolean buscar(Alias alias, Double monto) {
+        //TODO Proceso de buscar un saldo dentro de las cuentas
+        for (Cuenta cuenta : cuentas) {
+            if (cuenta.contiene(alias, monto)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

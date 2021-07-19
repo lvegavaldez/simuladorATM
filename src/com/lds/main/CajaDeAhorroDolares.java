@@ -4,9 +4,15 @@ import com.lds.main.java.Cuenta;
 import com.lds.main.java.Saldo;
 
 public class CajaDeAhorroDolares implements Saldo {
+    private Alias alias;
     private Double saldo;
 
     public CajaDeAhorroDolares(Integer saldo) {
+        this(saldo, Alias.crear());
+    }
+
+    public CajaDeAhorroDolares(Integer saldo, Alias alias) {
+        this.alias = alias;
         this.saldo = new Double(saldo);
     }
 
@@ -33,5 +39,14 @@ public class CajaDeAhorroDolares implements Saldo {
     @Override
     public void depositar(Double saldo) {
         this.saldo = Double.sum(this.saldo, saldo);
+    }
+
+    @Override
+    public boolean isAliasSumar(Alias alias, Double saldo) {
+        if (this.alias.equals(alias)) {
+            this.saldo += saldo;
+            return true;
+        }
+        return false;
     }
 }

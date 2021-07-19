@@ -1,5 +1,6 @@
 package com.lds.main.java;
 
+import com.lds.main.Alias;
 import com.lds.main.Cuentas;
 import com.lds.test.Sobre;
 
@@ -77,5 +78,23 @@ public class Cajero {
         Double saldo = contarSaldo(sobre);
         cuenta.depositarUsdCA(saldo);
         return "Deposito realizado con exito";
+    }
+
+    public String transferirDesdeCA(Alias alias, Double monto) {
+        Cuenta cuentaOrigen = cuentas.buscar(CUIT_HACK);
+
+        if (cuentaOrigen.retirarCA(monto) && cuentas.buscar(alias, monto)) {
+            return "Transferencia realizada con exito";
+        }
+        return "No se pudo finalizar la transferencia";
+    }
+
+    public String transferirDesdeCC(Alias alias, Double monto) {
+        Cuenta cuentaOrigen = cuentas.buscar(CUIT_HACK);
+
+        if (cuentaOrigen.retirarCC(monto) && cuentas.buscar(alias, monto)) {
+            return "Transferencia realizada con exito";
+        }
+        return "No se pudo finalizar la transferencia";
     }
 }

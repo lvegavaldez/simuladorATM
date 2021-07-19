@@ -1,9 +1,9 @@
 package com.lds.main.java;
 
+import com.lds.main.Alias;
 import com.lds.main.CajaDeAhorroDolares;
 import com.lds.main.CajaDeAhorroPesos;
 import com.lds.main.CuentaCorriente;
-import com.lds.test.Sobre;
 
 import java.util.Arrays;
 
@@ -65,5 +65,11 @@ public class Cuenta {
 
     public void depositarUsdCA(Double saldo) {
         cajaDeAhorroDolare.depositar(saldo);
+    }
+
+    public boolean contiene(Alias alias, Double saldo) {
+        return cuentaCorriente.isAliasSumar(alias, saldo) ||
+                cajaDeAhorroPesos.isAliasSumar(alias, saldo) ||
+                cajaDeAhorroDolare.isAliasSumar(alias, saldo);
     }
 }
